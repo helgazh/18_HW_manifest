@@ -1,0 +1,124 @@
+.the_most_popular {
+  padding-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .the_most_popular {
+    margin-top: 15px;
+  }
+}
+
+.viewall {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+@media screen and (max-width: 320px) {
+  .viewall {
+    display: block;
+    margin-bottom: 31px;
+  }
+}
+.viewall__link {
+  margin-top: 8px;
+}
+@media screen and (max-width: 320px) {
+  .viewall__link {
+    margin-top: -38px;
+  }
+}
+.viewall__link a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26.56px;
+  letter-spacing: 0.1em;
+  color: #7B7B7B;
+  padding-right: 12px;
+}
+.viewall__link a::after {
+  content: url(../images/svg/arrow.svg);
+}
+.viewall__link a:hover {
+  color: lightgrey;
+}
+
+.populars {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 56px;
+}
+@media screen and (max-width: 768px) {
+  .populars {
+    gap: 20px;
+    margin-bottom: 65px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .populars {
+    display: block;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popular {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popular {
+    display: block;
+    margin-bottom: 48px;
+  }
+}
+.popular img {
+  margin-bottom: 20px;
+  margin-top: 7px;
+}
+@media screen and (max-width: 768px) {
+  .popular img {
+    margin-top: 3px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popular img {
+    width: 300px;
+    height: 150px;
+    margin-top: -1px;
+    margin-bottom: 23px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popular__content p {
+    letter-spacing: 0.06em;
+  }
+}
+@media screen and (max-width: 320px) {
+  .popular__content p + p {
+    margin-top: 10px;
+  }
+}
+.popular__content--about {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26.56px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  background-color: #565656;
+  padding: 8.5px 43px;
+}
+button:hover {
+  cursor: pointer;
+  background-color: rgba(86, 86, 86, 0.6352941176);
+}

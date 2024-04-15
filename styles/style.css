@@ -1,0 +1,12 @@
+@import "../reset/normalize.css";
+@import "../reset/reset.css";
+
+@import "./fonts.css";
+@import "./text&h.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./blog.css";
+@import "./post.css";
+@import "./popular.css";
+@import "./info.css";
+@import "./footer.css";

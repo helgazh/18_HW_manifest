@@ -1,0 +1,42 @@
+.hero {
+  height: 90vh;
+  background-image: url(../images/hero_bg/bg-laptop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 100px;
+  margin-bottom: -110px;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    background-image: url(../images/hero_bg/bg-tablet.png);
+    padding-top: 30px;
+    height: 50vh;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero {
+    background-image: url(../images/hero_bg/bg-mobile.png);
+    height: 71vh;
+    padding-top: 65px;
+  }
+}
+.hero span {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 768px) {
+  .hero span {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero span {
+    font-size: 30px;
+    line-height: 50px;
+  }
+}

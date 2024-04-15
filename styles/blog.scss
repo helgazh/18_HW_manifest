@@ -1,0 +1,95 @@
+.blog__item{
+    display: flex;
+    gap: 30px; 
+    @media screen and (max-width: 768px){
+        gap: 20px; 
+    }
+    @media screen and (max-width: 320px){
+        flex-direction: column;
+    }
+    &:nth-child(odd){
+        @media screen and (min-width: 768px){
+            flex-direction: row-reverse;
+        }
+        @media screen and (max-width: 320px){
+            flex-direction: column-reverse;
+        }
+    }
+    &--content{
+        max-width: 450px;
+        margin-top: 85px;
+        @media screen and (max-width: 768px){
+            max-width: 340px;
+            margin-top: 0px;
+            }
+        @media screen and (max-width: 320px){
+            max-width: 340px;
+            margin-top: 90px;
+            }
+        p{
+            margin-top: 50px;
+            position: relative;
+            &.hiden_content{
+                @media screen and (max-width: 768px){
+                    width: 440px;
+                    overflow: hidden;
+                    z-index: -1;
+                }
+                @media screen and (max-width: 320px){
+                    width: 300px;
+                }
+            }
+            span{
+                @media screen and (max-width: 768px){
+                    display: none;
+                }
+                @media screen and (max-width: 320px){
+                    display: block;
+                }
+            }
+            @media screen and (max-width: 768px){
+                margin-top: 40px;
+                }
+        }
+        a{
+            position: relative;
+            fill: #7B7B7B;
+            &::after{
+                content: url(../images/svg/arrow.svg);
+                position: absolute;
+                top: -20px;
+                left: 12em;
+                width: 24px; 
+                height: 12px;
+                @media screen and (max-width: 768px){
+                    left: 18em;
+                    } 
+                    @media screen and (max-width: 320px){
+                        display: none;
+                    }
+            }
+        }
+    }
+    &--img img{
+        @media screen and (max-width: 320px){
+            width: 300px;
+            height: 250px;
+            margin-top: 20px;
+        }
+    }
+}
+.blog__item + .blog__item{
+    margin-top: 53px;
+    @media screen and (max-width: 768px){
+        margin-top: 50px;
+    } 
+    @media screen and (max-width: 320px){
+        margin-top: -40px;
+    } 
+
+}
+.revers{
+    @media screen and (max-width: 320px){
+        flex-direction: column-reverse;
+    } 
+}
